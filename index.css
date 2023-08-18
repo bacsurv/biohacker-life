@@ -1,30 +1,33 @@
 body {
-    width: 100%;
-    margin: 0;
-    padding: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
+
+/* HEADER */
+
 header {
-    display: flex;
-    height: 5.25rem;
-    background-image: linear-gradient(to right, #1D022E, #5C342A);
+  display: flex;
+  height: 5.25rem;
+  background-image: linear-gradient(to right, #1d022e, #5c342a);
 }
 .menu {
-    display: flex;
-    position: absolute;
-    right: 0;
-    height: 2.438rem;
-    padding: 1.406rem;
-    align-items: center;
+  display: flex;
+  position: absolute;
+  right: 0;
+  height: 2.438rem;
+  padding: 1.406rem;
+  align-items: center;
 }
 .logo {
-    height: 2.438rem;
-    padding: 1.406rem;
+  height: 2.438rem;
+  padding: 1.406rem;
 }
 .menu_item {
-    padding: 0 1.25rem;
-    text-decoration: none;
-    font-family: 'Barlow', sans-serif;
-    font-weight: 400;
-    font-size: 1.25rem;
-    color: #f8edff;
+  padding: 0 1.25rem;
+  text-decoration: none;
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: #f8edff;
 }
