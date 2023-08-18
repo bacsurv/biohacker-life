@@ -31,3 +31,57 @@ header {
   font-size: 1.25rem;
   color: #f8edff;
 }
+
+
+/* MAIN */
+#hero {
+    background-image: url(/sources/images/13-bg.jpg);
+    height: 45.75rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#transparent_layer {
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7));
+    z-index: 1;
+    position: absolute;
+    height: 45.75rem;
+}
+#hero .container {
+    height: 33.625rem;
+    width: 80%;
+    color: #f8edff;
+    text-align: center;
+    margin: 6.063rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.text_block_highlighted {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.5rem;
+}
+.text_block_header1 {
+    font-family: 'Blinker', sans-serif;
+    font-weight: 700;
+    font-size: 3.5rem;
+}
+.text_block_header2 {
+    font-family: 'Barlow', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+.text_block_paragraph {
+    font-family: 'Barlow', sans-serif;
+    font-size: 0.9rem;
+}
+.highlighted {
+    font-weight: 600;
+}
+.btn {
+    width: 7rem;
+    margin: 0 auto 0 auto;
+    background-color: #FF5242;
+    padding: 0.7rem;
+    text-transform: uppercase;
+}
