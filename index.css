@@ -68,14 +68,14 @@ header {
     height: 45.75rem;
 }
 #hero .container {
-    height: 33.625rem;
+    height: 100%;
     width: 80%;
     color: var(--main_font_color_light);
     text-align: center;
-    margin: 6.063rem auto;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .text_block_highlighted {
     font-family: var(--p_font_family);
@@ -99,10 +99,13 @@ header {
     font-weight: var(--p_font_weight_highlighted);
 }
 .btn {
+    text-decoration: none;
+    color: var(--main_font_color_light);
     font-family: var(--p_font_family);
     font-weight: var(--p_font_weight_highlighted);
     font-size: var(--p_font_size);
     width: 7rem;
+    border-radius: 5px;
     margin: 0 auto 0 auto;
     background-color: var(--highlighted_color_light);
     padding: 0.7rem;
