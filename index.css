@@ -4,5 +4,23 @@ body {
     padding: 0;
 }
 header {
-    height: 80px;
+    display: flex;
+    height: 5.25rem;
+    background-color: blueviolet;
+}
+.menu {
+    display: flex;
+    position: absolute;
+    right: 0;
+    height: 2.438rem;
+    padding: 1.406rem;
+    align-items: center;
+}
+.logo {
+    height: 2.438rem;
+    padding: 1.406rem;
+}
+.menu_item {
+    padding: 0 1.25rem;
+    text-decoration: none;
 }
