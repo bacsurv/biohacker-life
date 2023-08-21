@@ -1,27 +1,27 @@
 :root {
-    --main_bg_color_light: #7100B8;
-    --main_bg_color_dark: #410566;
-    --main_bg_color_extra_dark: #1D022E;
-    --highlighted_color_light: #FF5242;
-    --highlighted_color_dark: #5C342A;
-    --main_font_color_light: #f8edff;
-    --main_font_color_dark: #414141;
-    --h1_font_family: 'Blinker', sans-serif;
-    --h2_font_family: 'Barlow', sans-serif;
-    --p_font_family: 'Barlow', sans-serif;
-    --h1_font_size: 4rem;
-    --h2_font_size: 1.5rem;
-    --p_font_size: 1.2rem;
-    --p_font_size_highlighted: 2rem;
-    --h1_font_weight: 700;
-    --h2_font_weight: 600;
-    --p_font_weight: 400;
-    --p_font_weight_highlighted: 600;
+  --main_bg_color_light: #7100b8;
+  --main_bg_color_dark: #410566;
+  --main_bg_color_extra_dark: #1d022e;
+  --highlighted_color_light: #ff5242;
+  --highlighted_color_dark: #5c342a;
+  --main_font_color_light: #f8edff;
+  --main_font_color_dark: #414141;
+  --h1_font_family: "Blinker", sans-serif;
+  --h2_font_family: "Barlow", sans-serif;
+  --p_font_family: "Barlow", sans-serif;
+  --h1_font_size: 4rem;
+  --h2_font_size: 1.5rem;
+  --p_font_size: 1.2rem;
+  --p_font_size_highlighted: 2rem;
+  --h1_font_weight: 700;
+  --h2_font_weight: 600;
+  --p_font_weight: 400;
+  --p_font_weight_highlighted: 600;
 }
 body {
   width: 100%;
   margin: 0;
-  padding: 0;  
+  padding: 0;
 }
 
 /* HEADER */
@@ -29,7 +29,11 @@ body {
 header {
   display: flex;
   height: 5.25rem;
-  background-image: linear-gradient(to right, var(--main_bg_color_extra_dark), var(--highlighted_color_dark));
+  background-image: linear-gradient(
+    to right,
+    var(--main_bg_color_extra_dark),
+    var(--highlighted_color_dark)
+  );
 }
 .menu {
   display: flex;
@@ -52,91 +56,111 @@ header {
   color: var(--main_font_color_light);
 }
 
-
 /* MAIN */
+
 #hero {
-    background-image: url(/sources/images/13-bg.jpg);
-    height: 45.75rem;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  background-image: url(/sources/images/13-bg.jpg);
+  height: 45.75rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 #transparent_layer {
-    background-image: linear-gradient(rgba(20, 1, 32, 0.01), black);
-    z-index: 1;
-    position: absolute;
-    height: 45.75rem;
+  background-image: linear-gradient(rgba(20, 1, 32, 0.01), black);
+  z-index: 1;
+  position: absolute;
+  height: 45.75rem;
 }
 #hero .container {
-    height: 100%;
-    width: 80%;
-    color: var(--main_font_color_light);
-    text-align: center;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+  height: 100%;
+  width: 80%;
+  color: var(--main_font_color_light);
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 .text_block_highlighted {
-    font-family: var(--p_font_family);
-    font-size: var(--p_font_size_highlighted);
+  font-family: var(--p_font_family);
+  font-size: var(--p_font_size_highlighted);
 }
 .text_block_header1 {
-    font-family: var(--h1_font_family);
-    font-weight: var(--h1_font_weight);
-    font-size: var(--h1_font_size);
+  font-family: var(--h1_font_family);
+  font-weight: var(--h1_font_weight);
+  font-size: var(--h1_font_size);
 }
 .text_block_header2 {
-    font-family: var(--h2_font_family);
-    text-transform: uppercase;
-    font-size: var(--h2_font_size);
+  font-family: var(--h2_font_family);
+  text-transform: uppercase;
+  font-size: var(--h2_font_size);
 }
 .text_block_paragraph {
-    font-family: var(--p_font_family);
-    font-size: var(--p_font_size);
+  font-family: var(--p_font_family);
+  font-size: var(--p_font_size);
 }
 .highlighted {
-    font-weight: var(--p_font_weight_highlighted);
+  font-weight: var(--p_font_weight_highlighted);
 }
 .btn {
-    text-decoration: none;
-    color: var(--main_font_color_light);
-    font-family: var(--p_font_family);
-    font-weight: var(--p_font_weight_highlighted);
-    font-size: var(--p_font_size);
-    width: 7rem;
-    border-radius: 5px;
-    margin: 0 auto 0 auto;
-    background-color: var(--highlighted_color_light);
-    padding: 0.7rem;
-    text-transform: uppercase;
+  text-decoration: none;
+  color: var(--main_font_color_light);
+  font-family: var(--p_font_family);
+  font-weight: var(--p_font_weight_highlighted);
+  font-size: var(--p_font_size);
+  width: 7rem;
+  border-radius: 5px;
+  margin: 0 auto 0 auto;
+  background-color: var(--highlighted_color_light);
+  padding: 0.7rem;
+  text-transform: uppercase;
 }
 #section_2 {
-    display: flex;
-    height: 19.438rem;
-    background-image: linear-gradient(black, var(--main_bg_color_light));
-    color: var(--main_font_color_light);
-    justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+  height: 19.438rem;
+  background-image: linear-gradient(black, var(--main_bg_color_light));
+  color: var(--main_font_color_light);
+  justify-content: space-evenly;
+  justify-items: center;
+  align-items: center;
 }
 .text_block_container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 5.9885rem 0;
-    height: 7.461rem;
-    width: 21.436rem;
-    border-radius: 20px;
-    background-color: #f8edff5a;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 7.461rem;
+  width: 15rem;
+  border-radius: 20px;
+  background-color: #f8edff5a;
 }
 .text_block_paragraph {
-    font-family: var(--p_font_family);
-    font-size: var(--p_font_size);
-    font-weight: var(--p_font_weight);
+  font-family: var(--p_font_family);
+  font-size: var(--p_font_size);
+  font-weight: var(--p_font_weight);
 }
 .highlighted_paragraph {
-    text-transform: uppercase;
-    font-family: var(--h2_font_family);
+  text-transform: uppercase;
+  font-family: var(--h2_font_family);
+  font-size: var(--h2_font_size);
+  font-weight: var(--h2_font_weight);
+}
+
+@media (max-width: 48rem) {
+  .menu {
+    display: none;
+  }
+  .text_block_header1 {
     font-size: var(--h2_font_size);
-    font-weight: var(--h2_font_weight);
+  }
+  .text_block_header2 {
+    font-size: var(--p_font_size);
+  }
+  #section_2 {
+    grid-template-columns: 1fr;
+    height: 28rem;
+    gap: 0;
+  }
 }
