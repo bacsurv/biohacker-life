@@ -158,6 +158,9 @@ header {
   .text_block_header2 {
     font-size: var(--p_font_size);
   }
+  .text_block_highlighted {
+    font-size: var(--p_font_size);
+  }
   #section_2 {
     grid-template-columns: 1fr;
     height: 28rem;
