@@ -33,6 +33,9 @@
     #third_paragraph {
       margin: 0 0 0 53%;
     }
+    #subscr_container {
+        width: 65rem;
+    }
   }
   @media (max-width: 67.5rem) {
     /*1080px*/
@@ -63,6 +66,21 @@
     }
     #third_paragraph {
       margin: 0 0 0 60%;
+    }
+    #section_5 {
+        height: 50rem;
+    }
+    #subscr_container{
+        width: 40rem;
+        height: 30rem;
+    }
+    #subscr {
+        display: block;
+        text-align: center;
+        width: 40rem;
+    }
+    .subscr_items_container {
+        padding: 1rem;
     }
   }
   @media (max-width: 58rem) {
@@ -123,6 +141,12 @@
     #third_paragraph {
       margin: 0;
     }
+    #subscr_container{
+        width: 30rem;
+    }
+    #subscr {
+        width: 30rem;
+    }
   }
   @media (max-width: 36rem) {
     /* 576px */
@@ -181,6 +205,12 @@
     }
     .card_item_container_inner{
         width: 20rem;
+    }
+    #subscr_container{
+        width: 25rem;
+    }
+    #subscr {
+        width: 25rem;
     }
   }
   

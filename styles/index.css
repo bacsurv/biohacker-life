@@ -259,7 +259,68 @@ header {
 
 /* SECTION 5 */
 #section_5 {
+  color: var(--main_font_color_dark);
   height: 25rem;
   background-image: url(/sources/images/4-bg.jpg);
   background-size: cover;
+  display: flex;
+  align-items: center;
+}
+#subscr_container {
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.65);
+  margin: 0 auto 0 auto;
+  height: 15rem;
+  width: 70rem;
+  text-align: center;
+  padding: 1rem 0;
+  box-shadow: 12px 12px 24px rgba(90, 90, 90, 0.784);
+  border-radius: 20px;
+}
+#subscr_container .text_block_paragraph {
+  padding: 1.5rem;
+}
+#subscr {
+  width: 60rem;
+  margin: 0 auto 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  color: var(--main_font_color_dark);
+  font-family: var(--p_font_family);
+  font-size: var(--p_font_size);
+  font-weight: var(--p_font_weight);
+  text-align: left;
+  align-items: end;
+}
+#subscr label {
+  padding-bottom: 0.5rem;
+}
+#subscr input {
+  border-radius: 10px;
+  border: 1px solid var(--main_font_color_dark);
+  height: 1.5rem;
+  width: 16rem;
+  padding: 1rem;
+  color: #6e6e6e;
+  font-size: var(--p_font_size);
+  font-family: var(--p_font_family);
+
+}
+.subscr_items_container label {
+  display: block;
+  position: relative;
+}
+#submit_btn {
+  border: none;
+  box-sizing: content-box;
+  color: var(--main_font_color_light);
+  font-family: var(--p_font_family);
+  font-weight: var(--p_font_weight_highlighted);
+  font-size: var(--p_font_size);
+  width: 16rem;
+  height: 1.5rem;
+  border-radius: 10px;
+  background-color: var(--highlighted_color_light);
+  padding: 1rem;
+  text-transform: uppercase;
 }

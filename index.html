@@ -205,7 +205,6 @@
                 </div>
               </div>
             </div>
-
             <div class="card_item_container">
               <div class="card_item_container_inner">
                 <div class="card_item_container_front">
@@ -226,10 +225,27 @@
       </section>
       <section id="section_5">
         <div id="subscr_container">
-          <div class="text_block_header2">Kérd el itt az ingyenes előadást</div>
+          <div class="text_block_header2 highlighted">Kérd el itt az ingyenes előadást</div>
           <div class="text_block_paragraph">
             Add meg a neved és az e-mail címed, hogy azonnal hozzáférhess!
           </div>
+          <form id="subscr">
+            <div class="subscr_items_container">
+              <label for="subscr_name">Név:</label>
+              <input type="text" id="subscr_name" value="Add meg a neved..." />
+            </div>
+            <div class="subscr_items_container">
+              <label for="subscr_email">E-mail:</label>
+              <input
+                type="text"
+                id="subscr_email"
+                value="Add meg az e-mail címed..."
+              />
+            </div>
+            <div class="subscr_items_container">
+              <button type="submit" id="submit_btn">Kérem az előadást!</button>
+            </div>
+          </form>
         </div>
       </section>
     </main>
