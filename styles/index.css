@@ -27,7 +27,7 @@ body {
 
 /* HEADER */
 
-header {
+header, footer {
   display: flex;
   height: 5.25rem;
   background-image: linear-gradient(
@@ -46,7 +46,7 @@ header {
 }
 .logo {
   height: 2.438rem;
-  padding: 1.406rem;
+  padding: 2rem;
 }
 .menu_item {
   padding: 0 1.25rem;
@@ -304,7 +304,11 @@ header {
   color: #6e6e6e;
   font-size: var(--p_font_size);
   font-family: var(--p_font_family);
-
+}
+#subscr input:focus {
+  background-color: var(--main_font_color_light);
+  outline: none;
+  border: 1px solid var(--main_bg_color_light);
 }
 .subscr_items_container label {
   display: block;
@@ -323,4 +327,17 @@ header {
   background-color: var(--highlighted_color_light);
   padding: 1rem;
   text-transform: uppercase;
+}
+
+/* FOOTER */
+footer {
+  justify-content: center;
+}
+.copyright {
+  font-family: var(--p_font_family);
+  font-weight: var(--p_font_weight_highlighted);
+  font-size: var(--p_font_size);
+  color: var(--main_font_color_light);
+  box-sizing: border-box;
+  padding: 2rem;
 }
