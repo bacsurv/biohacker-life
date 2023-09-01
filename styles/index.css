@@ -40,22 +40,24 @@ header, footer {
   display: flex;
   position: absolute;
   right: 0;
-  height: 2.438rem;
-  padding: 1.406rem;
-  align-items: center;
-}
-.logo {
-  height: 2.438rem;
-  padding: 2rem;
+  height: 5.25rem;
 }
 .menu_item {
-  padding: 0 1.25rem;
   text-decoration: none;
   font-family: var(--p_font_family);
   font-weight: var(--p_font_weight_highlighted);
   font-size: var(--p_font_size);
   color: var(--main_font_color_light);
+  padding: 1.906rem 2.25rem;
 }
+.menu_item:hover {
+  background-color: var(--main_bg_color_extra_dark);
+}
+.logo {
+  height: 2.438rem;
+  padding: 1.403rem 2rem;
+}
+
 
 /* MAIN */
 
@@ -114,6 +116,13 @@ header, footer {
   background-color: var(--highlighted_color_light);
   padding: 0.7rem;
   text-transform: uppercase;
+  z-index: 6;
+}
+.btn:hover, #submit_btn:hover {
+  background-color:#ff6e42;
+}
+.btn:active, #submit_btn:active {
+  background-color: var(--main_bg_color_extra_dark);
 }
 
 /* SECTION 2 */
