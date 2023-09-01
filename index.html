@@ -13,6 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Blinker:wght@700&display=swap"
       rel="stylesheet"
     />
+    <script src="/index.js"></script>
   </head>
   <body>
     <header>
@@ -24,10 +25,19 @@
         />
       </a>
       <div class="menu">
-        <a href="#" id="about" class="menu_item">Rólunk</a>
-        <a href="#" id="contact" class="menu_item">Kapcsolat</a>
+        <a href="#" class="menu_item">Rólunk</a>
+        <a href="#" class="menu_item">Kapcsolat</a>
       </div>
+      <a href="#menu_mobile" id="hamburger_container" onclick="displayMenu()">
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+      </a>
     </header>
+    <div id="menu_mobile">
+        <a href="#" class="menu_item_mobile">Rólunk</a>
+        <a href="#" class="menu_item_mobile">Kapcsolat</a>
+    </div>
     <main>
       <section id="hero">
         <div class="transparent_layer">

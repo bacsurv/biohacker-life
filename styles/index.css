@@ -42,23 +42,64 @@ header, footer {
   right: 0;
   height: 5.25rem;
 }
-.menu_item {
+.menu_item, .menu_item_mobile {
   text-decoration: none;
   font-family: var(--p_font_family);
   font-weight: var(--p_font_weight_highlighted);
   font-size: var(--p_font_size);
   color: var(--main_font_color_light);
+}
+.menu_item {
   padding: 1.906rem 2.25rem;
 }
 .menu_item:hover {
   background-color: var(--main_bg_color_extra_dark);
 }
+#hamburger_container {
+  display: none;
+  position: absolute;
+  right: 2rem;
+  top: 1rem;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 4rem;
+  height: 3rem;
+}
+.hamburger {
+  height: 5px;
+  width: 2.5rem;
+  background-color: white;
+}
+#hamburger_container:active #menu_mobile {
+  display: flex;
+}
+#menu_mobile {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 5.25rem;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  z-index: 10;
+  background-image: linear-gradient(
+    to right,
+    var(--main_bg_color_extra_dark),
+    var(--highlighted_color_dark)
+  );
+}
+.menu_item_mobile {
+  box-sizing: border-box;
+  height: 5.25rem;
+  width: 100%;
+  text-align: center;
+  padding: 1.906rem 0;
+}
 .logo {
   height: 2.438rem;
   padding: 1.403rem 2rem;
 }
-
-
 /* MAIN */
 
 #hero {
@@ -350,3 +391,6 @@ footer {
   box-sizing: border-box;
   padding: 2rem;
 }
+
+
+
