@@ -25,20 +25,10 @@ body {
   box-sizing: border-box;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /* HEADER */
 
-header, footer {
+header,
+footer {
   display: flex;
   height: 5.25rem;
   width: 100%;
@@ -52,7 +42,9 @@ header {
   position: fixed;
   top: 0;
   z-index: 110;
-
+}
+navbar a {
+  z-index: 111;
 }
 .logo {
   height: 2.438rem;
@@ -65,7 +57,8 @@ header {
   height: 5.25rem;
   z-index: 10;
 }
-.menu_item, .menu_item_mobile {
+.menu_item,
+.menu_item_mobile {
   text-decoration: none;
   font-family: var(--p_font_family);
   font-weight: var(--p_font_weight_highlighted);
@@ -75,10 +68,9 @@ header {
 .menu_item {
   padding: 1.906rem 2.25rem;
 }
-.menu_item:hover {
+.menu_item:hover, .menu_item_mobile:hover {
   background-color: var(--main_bg_color_extra_dark);
 }
-
 
 /* MOBILE NAVBAR */
 
@@ -157,44 +149,31 @@ navbar {
 .nav_container input[type="checkbox"]:checked ~ #menu_mobile {
   transform: translateX(0);
 }
-.nav_container input[type="checkbox"]:checked ~ #hamburger_container #hamburger_line_1 {
+.nav_container
+  input[type="checkbox"]:checked
+  ~ #hamburger_container
+  #hamburger_line_1 {
   transform: rotate(45deg);
 }
-.nav_container input[type="checkbox"]:checked ~ #hamburger_container #hamburger_line_2 {
+.nav_container
+  input[type="checkbox"]:checked
+  ~ #hamburger_container
+  #hamburger_line_2 {
   transform: scaleY(0);
 }
-.nav_container input[type="checkbox"]:checked ~ #hamburger_container #hamburger_line_3 {
+.nav_container
+  input[type="checkbox"]:checked
+  ~ #hamburger_container
+  #hamburger_line_3 {
   transform: rotate(-45deg);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* MAIN */
 
+main, footer {
+  position: relative;
+  top: 5.25rem;
+}
 #hero {
   background-image: url(/sources/images/1-bg.jpg);
   height: 45.75rem;
@@ -252,10 +231,12 @@ navbar {
   text-transform: uppercase;
   z-index: 6;
 }
-.btn:hover, #submit_btn:hover {
-  background-color:#ff6e42;
+.btn:hover,
+#submit_btn:hover {
+  background-color: #ff6e42;
 }
-.btn:active, #submit_btn:active {
+.btn:active,
+#submit_btn:active {
   background-color: var(--main_bg_color_extra_dark);
 }
 
@@ -484,4 +465,3 @@ footer {
   box-sizing: border-box;
   padding: 2rem;
 }
-
