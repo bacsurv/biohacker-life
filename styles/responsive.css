@@ -100,6 +100,11 @@
         height: 120rem;
        }
   }
+  @media (min-width: 48rem) {
+    #menu_mobile {
+      display: none
+    }
+  }
   @media (max-width: 48rem) {
     /*768px*/
     .menu {

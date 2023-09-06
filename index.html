@@ -13,31 +13,54 @@
       href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Blinker:wght@700&display=swap"
       rel="stylesheet"
     />
-    <script src="/index.js"></script>
   </head>
+
+
+
+
+
   <body>
     <header>
-      <a href="index.html">
-        <img
-          src="/sources/icons/logo.png"
-          alt="Biohacker Life logo"
-          class="logo"
-        />
-      </a>
-      <div class="menu">
-        <a href="#" class="menu_item">Rólunk</a>
-        <a href="#" class="menu_item">Kapcsolat</a>
-      </div>
-      <a href="#menu_mobile" id="hamburger_container" onclick="displayMenu()">
-        <span class="hamburger"></span>
-        <span class="hamburger"></span>
-        <span class="hamburger"></span>
-      </a>
+      <navbar>
+        <a href="index.html">
+            <img
+              src="/sources/icons/logo.png"
+              alt="Biohacker Life logo"
+              class="logo"
+            />
+          </a>
+        <div class="menu">
+            <a href="#" class="menu_item">Rólunk</a>
+            <a href="#" class="menu_item">Kapcsolat</a>
+          </div>
+        <div class="container nav_container">
+          <input class="checkbox" type="checkbox" name="check" id="check" />
+          <div id="hamburger_container">
+            <span class="hamburger" id="hamburger_line_1"></span>
+            <span class="hamburger" id="hamburger_line_2"></span>
+            <span class="hamburger" id="hamburger_line_3"></span>
+          </div>
+          <div id="menu_mobile">
+            <a href="#" class="menu_item_mobile">Rólunk</a>
+            <a href="#" class="menu_item_mobile">Kapcsolat</a>
+          </div>
+        </div>
+      </navbar>
     </header>
-    <div id="menu_mobile">
-        <a href="#" class="menu_item_mobile">Rólunk</a>
-        <a href="#" class="menu_item_mobile">Kapcsolat</a>
-    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
     <main>
       <section id="hero">
         <div class="transparent_layer">
@@ -235,14 +258,20 @@
       </section>
       <section id="section_5">
         <div id="subscr_container">
-          <div class="text_block_header2 highlighted">Kérd el itt az ingyenes előadást</div>
+          <div class="text_block_header2 highlighted">
+            Kérd el itt az ingyenes előadást
+          </div>
           <div class="text_block_paragraph">
             Add meg a neved és az e-mail címed, hogy azonnal hozzáférhess!
           </div>
           <form id="subscr">
             <div class="subscr_items_container">
               <label for="subscr_name">Név:</label>
-              <input type="text" id="subscr_name" placeholder="Add meg a neved..." />
+              <input
+                type="text"
+                id="subscr_name"
+                placeholder="Add meg a neved..."
+              />
             </div>
             <div class="subscr_items_container">
               <label for="subscr_email">E-mail:</label>
@@ -259,7 +288,9 @@
         </div>
       </section>
       <footer>
-        <div class="copyright">&copy; biohackerlife - Minden jog fenntartva!</div>
+        <div class="copyright">
+          &copy; biohackerlife - Minden jog fenntartva!
+        </div>
       </footer>
     </main>
   </body>
