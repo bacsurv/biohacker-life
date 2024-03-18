@@ -1,0 +1,12 @@
+body {
+    background-image: linear-gradient(
+        to right,
+        var(--main_bg_color_extra_dark),
+        var(--highlighted_color_dark)
+      );
+      text-align: center;
+}
+.text_block_header1 {
+    color: var(--main_font_color_light);
+    margin: 2rem;
+}

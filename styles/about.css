@@ -1,0 +1,22 @@
+body {
+    background-image: linear-gradient(
+        to right,
+        var(--main_bg_color_extra_dark),
+        var(--highlighted_color_dark)
+      );
+}
+section {
+    position: relative;
+    color: var(--main_font_color_light);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 10rem;
+    text-align: center;
+  }
+.text_block_header1 {
+    margin-bottom: 4rem;
+}
+.text_block_paragraph {
+    line-height: 1.5;
+}

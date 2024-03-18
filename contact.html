@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biohacker Life - Contact</title>
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="stylesheet" href="/styles/contact.css" />
+    <link rel="stylesheet" href="/styles/responsive.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Blinker:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <navbar>
+        <a href="/index.html">
+          <img
+            src="/sources/icons/logo.png"
+            alt="Biohacker Life logo"
+            class="logo"
+          />
+        </a>
+        <div class="menu">
+          <a href="/about.html" class="menu_item">Rólunk</a>
+          <a href="/contact.html" class="menu_item">Kapcsolat</a>
+        </div>
+        <div class="container nav_container">
+          <input class="checkbox" type="checkbox" name="check" id="check" />
+          <div id="hamburger_container">
+            <span class="hamburger" id="hamburger_line_1"></span>
+            <span class="hamburger" id="hamburger_line_2"></span>
+            <span class="hamburger" id="hamburger_line_3"></span>
+          </div>
+          <div id="menu_mobile">
+            <a href="/about.html" class="menu_item_mobile">Rólunk</a>
+            <a href="/contact.html" class="menu_item_mobile">Kapcsolat</a>
+          </div>
+        </div>
+      </navbar>
+    </header>
+    <main>
+      <section>
+        <div class="text_block_header1">Kapcsolat</div>
+          <section id="section_5">
+            <div id="subscr_container">
+              <div class="text_block_header2 highlighted">
+                Kérdésed van?
+              </div>
+              <div class="text_block_paragraph">
+                Add meg a neved és az e-mail címed, hogy kapcsolatba léphessünk
+                veled!
+              </div>
+              <form id="subscr">
+                <div class="subscr_items_container">
+                  <label for="subscr_name">Név:</label>
+                  <input
+                    type="text"
+                    id="subscr_name"
+                    placeholder="Add meg a neved..."
+                    required
+                  />
+                </div>
+                <div class="subscr_items_container">
+                  <label for="subscr_email">E-mail:</label>
+                  <input
+                    type="email"
+                    id="subscr_email"
+                    placeholder="Add meg az e-mail címed..."
+                    required
+                  />
+                </div>
+                <div class="subscr_items_container">
+                  <button type="submit" id="submit_btn">
+                    Elküldöm!
+                  </button>
+                </div>
+              </form>
+            </div>
+          </section>
+      </section>
+    </main>
+    <footer>
+      <div class="copyright">&copy; biohackerlife - Minden jog fenntartva!</div>
+    </footer>
+  </body>
+</html>
