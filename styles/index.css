@@ -1,6 +1,6 @@
 
 #hero {
-  background-image: url(/sources/images/1-bg.jpg);
+  background-image: url(../sources/images/1-bg.jpg);
   height: 45.75rem;
   background-repeat: no-repeat;
   background-size: cover;
@@ -55,7 +55,7 @@
 
 #section_3 {
   position: relative;
-  background-image: url(/sources/images/2-bg.jpg);
+  background-image: url(../sources/images/2-bg.jpg);
   color: var(--main_font_color_dark);
   height: 55rem;
   background-repeat: no-repeat;
@@ -111,7 +111,7 @@
   position: relative;
   height: 72.5rem;
   z-index: 4;
-  background-image: url("/sources/images/3-bg.jpg");
+  background-image: url(../sources/images/3-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   color: var(--main_font_color_light);
