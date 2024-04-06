@@ -227,7 +227,7 @@
   #section_5 {
     color: var(--main_font_color_dark);
     height: 30rem;
-    background-image: url(/sources/images/4-bg.jpg);
+    background-image: url(../sources/images/4-bg.jpg);
     background-size: cover;
     display: flex;
     align-items: center;
